@@ -1,4 +1,6 @@
-package com.mike_milk.mvp.Moder;
+package com.mike_milk.mvp.Model;
+
+import android.content.Intent;
 
 /**
  * 时间：2020/3/17
@@ -33,4 +35,5 @@ public class User {
     public void setUserPassWord(String userPassWord) {
         UserPassWord = userPassWord;
     }
+
 }

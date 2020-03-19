@@ -2,51 +2,47 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Activity.MainActivity">
+    tools:context=".Activity.RegistActivity">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="登录"
-        android:layout_marginTop="50dp"
-        android:textSize="50sp"
-        android:gravity="center"/>
+        android:id="@+id/register_welcome"
+        android:layout_marginTop="70dp"
+        android:gravity="center_horizontal"
+        android:text="注册账号"
+        android:textColor="#2D2F31"
+        android:textSize="30sp"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入用户名"
+        android:id="@+id/register_account"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_marginTop="60dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:id="@+id/username"
-        android:maxLines="1"/>
+        android:hint="请输入用户名" />
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/userpassword"
+        android:id="@+id/register_password"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
-        android:hint="请输入密码"
+        android:hint="输入密码"
         android:inputType="textPassword"
-        android:maxLines="1"/>
+        android:maxLines="1"
+        android:textColor="#2B2B2B"/>
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:layout_marginLeft="30dp"
+        android:layout_height="55dp"
+        android:id="@+id/btn_register"
+        android:layout_gravity="center"
         android:layout_marginRight="30dp"
-        android:layout_marginTop="60dp"
-        android:text="登录"
-        android:gravity="center"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/register"
         android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
+        android:gravity="center"
         android:text="注册"
-        android:gravity="center"/>
+        android:textColor="#FAFAFA"
+        android:textSize="25sp"/>
 
 </LinearLayout>
